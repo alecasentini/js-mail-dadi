@@ -1,15 +1,17 @@
-let x = Math.floor((Math.random() * 6) + 1);
-console.log(x)
+function play(){
+    let x = Math.floor((Math.random() * 6) + 1);
+    document.getElementById("my-result").innerHTML = x;
 
-let y = Math.floor((Math.random() * 6) + 1);
-console.log(y)
+    let y = Math.floor((Math.random() * 6) + 1);
+    document.getElementById("computer-result").innerHTML = y;
 
-if (x>y){
-    console.log("hai vinto!")
-}
-else if(x<y){
-    console.log("hai perso!")
-}
-else{
-    console.log("Pareggio")
+    if (x>y){
+        document.getElementById("result").innerHTML = "Hai Vinto!";
+    }
+    else if(x<y){
+        document.getElementById("result").innerHTML = "Hai Perso";
+    }
+    else{
+        document.getElementById("result").innerHTML = "Pareggio";
+    }
 }
